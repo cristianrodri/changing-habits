@@ -1,0 +1,41 @@
+@import "../base/variables";
+
+.home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--gutter);
+
+  &__title,
+  &__subtitle {
+    margin-bottom: calc(var(--gutter) * 1);
+    font-weight: normal;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: var(--xxl);
+  }
+
+  &__subtitle {
+    font-size: var(--l);
+  }
+
+  &__action {
+    padding: 0.7em 1em;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    font-size: var(--m);
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    transition: all .1s;
+
+    &:hover {
+      background-color: darken($main-color, 10);
+    }
+  }
+}

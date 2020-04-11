@@ -1,0 +1,43 @@
+@import "../base/variables";
+
+.header {
+  background: linear-gradient(#111 92%, var(--main-color));
+  padding: var(--gutter);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    font-size: var(--xl);
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+
+  &__delete {
+    margin-right: var(--gutter);
+    background-color: transparent;
+    color: var(--main-color);
+    font-size: var(--m);
+    cursor: pointer;
+    transition: all .1s;
+
+    &:hover {
+      color: lighten($main-color, 10);
+    }
+  }
+
+  &__logout {
+    border-radius: 0.5em;
+    padding: 0.5em;
+    color: #fff;
+    cursor: pointer;
+    font-size: var(--m);
+    background: linear-gradient(to bottom, var(--main-color) 80%, transparent);
+    background-size: 100% 100%;
+    transition: all .3s;
+
+    &:hover {
+      background-size: 100% 120%;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+:root {
+  // color palette
+  --main-color: hsl(180, 46%, 25%);
+  --secondary-color: rgb(172, 216, 206);
+
+  // 1rem = 16px
+
+  // typography
+  --s: 0.8rem;
+  --m: 1rem;
+  --l: 1.2rem;
+  --xl: 1.6rem;
+  --xxl: 1.8rem;
+
+  // spacing
+  --gutter: 1rem;
+  --line-height: 1.6;
+}
+
+// ****** SASS VARIABLES ******
+
+// color palette
+$main-color: hsl(180, 46%, 25%);
+$secondary-color: rgb(172, 216, 206);
+
+// 1rem = 16px
+
+// typography
+$s: 0.8rem;
+$m: 1rem;
+$l: 1.2rem;
+$xl: 1.4rem;
+
+// spacing
+$gutter: 1rem;
+$line-height: 1.6;

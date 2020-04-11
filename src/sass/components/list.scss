@@ -1,0 +1,45 @@
+@import "../base/variables";
+
+.list {
+
+  &__item {
+    font-size: var(--l);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--main-color);
+    padding: calc(var(--gutter) / 2) 0;
+
+    &::before {
+      content: "\2713";
+      padding-right: 0.5rem;
+      color: rgb(14, 133, 14);
+    }
+  }
+
+  &__description {
+    flex: 3 1 300px;
+  }
+
+  &__date {
+    flex: 1 1 100px;
+    font-size: var(--m);
+    color: darken($main-color, 10);
+  }
+
+  &__icon {
+    font-size: var(--xl);
+    cursor: pointer;
+  }
+}
+
+.no-data,
+.deleting {
+  text-align: center;
+  font-size: var(--l);
+  color: var(--main-color);
+}
+
+.no-data {
+  text-decoration: underline;
+}

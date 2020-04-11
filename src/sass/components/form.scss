@@ -1,0 +1,52 @@
+@import "../base/variables";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > * {
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: var(--xl);
+    color: var(--main-color);
+  }
+
+  &__input {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 360px;
+    border: none;
+    font-size: var(--l);
+    color: var(--main-color);
+
+    &:focus {
+      box-shadow: 0 3px var(--main-color);
+      outline: none;
+    }
+  }
+
+  &__submit {
+    padding: 0.5em 1em;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: var(--m);
+    letter-spacing: 2px;
+    transition: all .1s;
+
+    &:hover {
+      background-color: darken($main-color, 10);
+    }
+
+    &:disabled {
+      cursor: initial;
+
+      &:hover {
+        background-color: var(--main-color);
+      }
+    }
+  }
+}
